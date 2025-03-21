@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Collections;
 
-public class MyDictionaryNotOptimized<TKey, UValue> : IEnumerable<KeyValuePair<TKey, UValue>>, IMyDictionary<TKey, UValue>
+public class MyDictionaryNotOptimized<TKey, UValue>
+    : IEnumerable<KeyValuePair<TKey, UValue>>, IMyDictionary<TKey, UValue>
 {
     private List<KeyValuePair<TKey, UValue>> _values = new List<KeyValuePair<TKey, UValue>>();
 
